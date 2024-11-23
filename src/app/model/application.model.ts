@@ -20,7 +20,7 @@ export class Application {
         this.applicantID = 0;
         this.fullName = '';
         this.applicationStatus = 'new';
-        this.panCard = '';
+        this.panCard = '122222';
         this.dateOfBirth = new Date();
         this.email = '';
         this.phone = '';
@@ -50,4 +50,10 @@ export class Loan {
         this.loanAmount = 0;
         this.emi = 0;
     }
+}
+
+export interface ApiResponseModel {
+    messege: string;
+    result: boolean;
+    data: any;
 }
